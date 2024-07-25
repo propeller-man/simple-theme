@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Golos Text';
+    src: url('https://res.cloudinary.com/drkwqb4l9/raw/upload/v1721682402/golos-text_black_qc5dbr.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Golos Text';
+    src: url('https://res.cloudinary.com/drkwqb4l9/raw/upload/v1721682403/golos-text_vf_gewo5n.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Golos UI';
+    src: url('https://res.cloudinary.com/drkwqb4l9/raw/upload/v1721682309/golos-ui_bold_zocq6x.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Golos UI';
+    src: url('https://res.cloudinary.com/drkwqb4l9/raw/upload/v1721682313/golos-ui_regular_mb2m7t.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('https://res.cloudinary.com/drkwqb4l9/raw/upload/v1721736763/Ubuntu_Medium_xrwjim.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('https://res.cloudinary.com/drkwqb4l9/raw/upload/v1721722442/Ubuntu_Regular_vqmyzu.woff2') format('woff2');
+    font-display: swap;
+}
+
+html {
+    font-size: 16px; /* Базовый размер шрифта */
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, .hero1 {
+    font-family: 'Golos Text', sans-serif;
+    font-size: 4em;
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+h2, .hero2 {
+    font-family: 'Golos Text', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+h3, .hero3 {
+    font-family: 'Golos Text', sans-serif;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
