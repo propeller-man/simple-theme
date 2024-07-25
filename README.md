@@ -7,16 +7,16 @@
 design-system/
 │
 ├── css/
-│ ├── bootstrap.min.css // Загружен через CDN
-│ ├── colors.css // Наши собственные определения цветов
-│ ├── typography.css // Настройки типографики
-│ ├── spacing.css // Настройки отступов
-│ ├── custom-bootstrap.css // Переопределенные стили Bootstrap
+│   ├── bootstrap.min.css       # Загружен через CDN
+│   ├── colors.css              # Наши собственные определения цветов
+│   ├── typography.css          # Настройки типографики
+│   ├── spacing.css             # Настройки отступов
+│   ├── custom-bootstrap.css    # Переопределенные стили Bootstrap
 │
 ├── js/
-│ ├── bootstrap.bundle.min.js // Загружен через CDN
-│ ├── theme-toggle.js // Скрипт переключения тем
-│ ├── components.js // Скрипты компонентов
+│   ├── bootstrap.bundle.min.js # Загружен через CDN
+│   ├── theme-toggle.js         # Скрипт переключения тем
+│   ├── components.js           # Скрипты компонентов
 │
 ├── index.html
 └── README.md
