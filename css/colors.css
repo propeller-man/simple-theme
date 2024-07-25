@@ -1,82 +1,69 @@
 /* colors.css */
+
+/* Основные цвета */
 :root {
-  /* Text Colors */
-  --text-primary: #24272D; /* Основной текст */
-  --text-secondary: #333840; /* Второстепенный текст */
-  --text-caption: #95969C; /* Текст подписи */
+  --text-primary: #24272D;
+  --text-secondary: #333840;
+  --text-caption: #95969C;
 
-  /* Background Colors */
-  --background-primary: #F6F6F6; /* Основной фон */
-  --background-secondary: #ECECEC; /* Второстепенный фон */
-  --background-tertiary: #E1E1E1; /* Третичный фон */
-  --background-accent: #DCFF06; /* Акцентный фон */
-  --background-card: #FFFFFF; /* Фон карточки */
+  --background-primary: #F6F6F6;
+  --background-secondary: #ECECEC;
+  --background-tertiary: #E1E1E1;
+  --background-accent: #DCFF06;
 
-  /* Borders */
-  --border-primary: #DDDDDD; /* Основная граница */
-  --border-secondary: #F7F8FA; /* Второстепенная граница */
-  --border-card: #DADDE1; /* Граница карточки */
-  --border-gradient: linear-gradient(45deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.5) 55%, rgba(255, 255, 255, 0.45) 100%); /* Градиентная граница */
+  --border-primary: #DADDE1;
+  --border-secondary: #7F8FA4;
+  --border-gradient: linear-gradient(45deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.5) 55%, rgba(255, 255, 255, 0.45) 100%);
+  
+  --accent-primary: #DCFF06;
+  --accent-tertiary: #59FFFB;
+  --accent-quaternary: #FC62FF;
+  --accent-link: #FFA511;
+  
+  --gradient-silver: linear-gradient(35deg, #00D7E0, #8D9A21);
+  --gradient-league: linear-gradient(20deg, #C2727F, #FF0084, #FFEA00);
+  --gradient-bronze: linear-gradient(35deg, #ECB701, #BFA401);
+  --gradient-gold: linear-gradient(35deg, #F6F601, #D5AD02);
+  
+  --system-negative: #E9033A;
+  --system-positive: #00C974;
 
-  /* Accent Colors */
-  --accent-primary: #DCFF06; /* Основной акцент */
-  --accent-tertiary: #00C8C8; /* Третичный акцент */
-  --accent-quaternary: #FC62FF; /* Четвертичный акцент */
-  --accent-link: #FFA511; /* Цвет ссылок */
-
-  /* Gradients */
-  --gradient-silver: linear-gradient(35deg, #D0D7E0, #B9D2A1); /* Серебряный градиент */
-  --gradient-league: linear-gradient(20deg, #C2727F, #FF0084, #FFEA00); /* Лиговый градиент */
-  --gradient-bronze: linear-gradient(35deg, #ECB701, #BFA401); /* Бронзовый градиент */
-  --gradient-gold: linear-gradient(35deg, #F6F601, #D5AD02); /* Золотой градиент */
-
-  /* System Colors */
-  --system-negative: #E9033A; /* Негативный системный цвет */
-  --system-positive: #00C974; /* Позитивный системный цвет */
-
-  /* Text Colors (Unchanged) */
-  --text-primary-on-accent: #24272D; /* Основной текст на акценте */
-  --text-secondary-on-accent: #333840; /* Второстепенный текст на акценте */
+  --accent-primary-hover: #C7E605; /* Добавлена переменная для состояния hover */
+  --background-card: #FFFFFF;
+  --border-card: #DADDE1;
 }
 
+/* Цвета для темной темы */
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Text Colors */
-    --text-primary: #F6F6F6; /* Основной текст */
-    --text-secondary: #ECECEC; /* Второстепенный текст */
-    --text-caption: #DADDE1; /* Текст подписи */
+    --text-primary: #F6F6F6;
+    --text-secondary: #ECECEC;
+    --text-caption: #DADEE1;
 
-    /* Background Colors */
-    --background-primary: #24272D; /* Основной фон */
-    --background-secondary: #333840; /* Второстепенный фон */
-    --background-tertiary: #444851; /* Третичный фон */
-    --background-accent: #DCFF06; /* Акцентный фон */
-    --background-card: #444851; /* Фон карточки */
+    --background-primary: #24272D;
+    --background-secondary: #333840;
+    --background-tertiary: #444851;
+    --background-accent: #00C8C8;
 
-    /* Borders */
-    --border-primary: #444851; /* Основная граница */
-    --border-secondary: #63676E; /* Второстепенная граница */
-    --border-card: #444851; /* Граница карточки */
-    --border-gradient: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.41) 55%, rgba(0, 0, 0, 1) 100%); /* Градиентная граница */
+    --border-primary: #444851;
+    --border-secondary: #63676E;
+    --border-gradient: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.0) 41%, rgba(0, 0, 0, 0.1) 100%);
+    
+    --accent-primary: #DCFF06;
+    --accent-tertiary: #00C8C8;
+    --accent-quaternary: #FF85FF;
+    --accent-link: #FFA511;
 
-    /* Accent Colors */
-    --accent-primary: #DCFF06; /* Основной акцент */
-    --accent-tertiary: #00C8C8; /* Третичный акцент */
-    --accent-quaternary: #FF85FF; /* Четвертичный акцент */
-    --accent-link: #FFA511; /* Цвет ссылок */
+    --gradient-silver: linear-gradient(35deg, #00D7E0, #8D9A21);
+    --gradient-league: linear-gradient(20deg, #C2727F, #FF0084, #FFEA00);
+    --gradient-bronze: linear-gradient(35deg, #ECB701, #BFA401);
+    --gradient-gold: linear-gradient(35deg, #F6F601, #D5AD02);
 
-    /* Gradients */
-    --gradient-silver: linear-gradient(35deg, #D0D7E0, #B9D2A1); /* Серебряный градиент */
-    --gradient-league: linear-gradient(20deg, #C2727F, #FF0084, #FFEA00); /* Лиговый градиент */
-    --gradient-bronze: linear-gradient(35deg, #ECB701, #BFA401); /* Бронзовый градиент */
-    --gradient-gold: linear-gradient(35deg, #F6F601, #D5AD02); /* Золотой градиент */
+    --system-negative: #E9033A;
+    --system-positive: #00C974;
 
-    /* System Colors */
-    --system-negative: #E9033A; /* Негативный системный цвет */
-    --system-positive: #00C974; /* Позитивный системный цвет */
-
-    /* Text Colors (Unchanged) */
-    --text-primary-on-accent: #24272D; /* Основной текст на акценте */
-    --text-secondary-on-accent: #333840; /* Второстепенный текст на акценте */
+    --accent-primary-hover: #C7E605;
+    --background-card: #24272D;
+    --border-card: #333840;
   }
 }
