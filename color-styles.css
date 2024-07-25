@@ -1,0 +1,126 @@
+/* Файл со стилям цветов для внешнего подключения в html лежит тут https://res.cloudinary.com/drkwqb4l9/raw/upload/v1721851168/presentation-style_wxtrwz.css*/
+
+
+
+/* Цвета фонов */
+:root {
+    --background-primary-light: #F6F6F6;
+    --background-primary-dark: #24272D;
+    --background-secondary-light: #ECECEC;
+    --background-secondary-dark: #333840;
+    --background-tertiary-light: #E1E1E1;
+    --background-tertiary-dark: #444851;
+    --background-accent: #DCFF06;
+    --card-background-light: #FFFFFF;
+    --card-background-dark: #24272D;
+
+    --gradient-silver: linear-gradient(35deg, #D0D7E0, #8B92A1);
+    --gradient-league: linear-gradient(20deg, #C272FF, #FF00B4, #FFEA00);
+    --gradient-bronze: linear-gradient(35deg, #ECB701, #BF8401);
+    --gradient-gold: linear-gradient(35deg, #F6F601, #D5AD02);
+
+    --text-primary-light: #24272D;
+    --text-primary-dark: #F6F6F6;
+    --text-secondary-light: #333840;
+    --text-secondary-dark: #ECECEC;
+    --text-caption-light: #95969C;
+    --text-caption-dark: #95969C;
+
+    --text-primary-on-accent: #24272D;
+    --text-secondary-on-accent: #333840;
+    --system-negative: #E9033A;
+    --system-positive: #00C974;
+    --border-primary: #D0D0D0;
+    --border-secondary: #F7F8FA;
+    --border-gradient: linear-gradient(45deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.55) 55%, rgba(255, 255, 255, 0.45) 100%);
+    --accent-primary: #DCFF06;
+    --accent-tertiary: #59FFFB;
+    --accent-quaternary: #FC62FF;
+    --accent-link: #FFA511;
+}
+
+/* Применение фонов и текста для светлой темы */
+body.light-theme {
+    background-color: var(--background-primary-light);
+    color: var(--text-primary-light);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.secondary-background-light {
+    background-color: var(--background-secondary-light);
+    color: var(--text-secondary-light);
+}
+
+.tertiary-background-light {
+    background-color: var(--background-tertiary-light);
+    color: var(--text-primary-light);
+}
+
+.accent-background {
+    background-color: var(--background-accent);
+    color: var(--text-primary-light);
+}
+
+.card-background-light {
+    background-color: var(--card-background-light);
+    color: var(--text-primary-light);
+}
+
+/* Применение фонов и текста для темной темы */
+body.dark-theme {
+    background-color: var(--background-primary-dark);
+    color: var(--text-primary-dark);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.secondary-background-dark {
+    background-color: var(--background-secondary-dark);
+    color: var(--text-secondary-dark);
+}
+
+.tertiary-background-dark {
+    background-color: var(--background-tertiary-dark);
+    color: var(--text-caption-dark);
+}
+
+.card-background-dark {
+    background-color: var(--card-background-dark);
+    color: var(--text-primary-dark);
+}
+
+/* Применение градиентов */
+.gradient-silver {
+    background: var(--gradient-silver);
+    color: var(--text-primary-light);
+}
+
+.gradient-league {
+    background: var(--gradient-league);
+    color: white;
+}
+
+.gradient-bronze {
+    background: var(--gradient-bronze);
+    color: var(--text-primary-light);
+}
+
+.gradient-gold {
+    background: var(--gradient-gold);
+    color: var(--text-primary-light);
+}
+
+/* Дополнительные стили для примера */
+.container {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.gradient-box {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
