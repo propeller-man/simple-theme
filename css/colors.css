@@ -1,69 +1,42 @@
-/* colors.css */
-
-/* Основные цвета */
 :root {
-  --text-primary: #24272D;
-  --text-secondary: #333840;
-  --text-caption: #95969C;
+    /* Основные цвета */
+    --primary-color: #DCFF06;
+    --secondary-color: #000;
+    --background-light: #fff;
+    --background-dark: #000;
+    --text-light: #000;
+    --text-dark: #fff;
 
-  --background-primary: #F6F6F6;
-  --background-secondary: #ECECEC;
-  --background-tertiary: #E1E1E1;
-  --background-accent: #DCFF06;
+    /* Дополнительные цвета */
+    --accent-color: #F39C12;
+    --muted-color: #95A5A6;
+    --info-color: #3498DB;
+    --success-color: #2ECC71;
+    --warning-color: #F1C40F;
+    --danger-color: #E74C3C;
 
-  --border-primary: #DADDE1;
-  --border-secondary: #7F8FA4;
-  --border-gradient: linear-gradient(45deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.5) 55%, rgba(255, 255, 255, 0.45) 100%);
-  
-  --accent-primary: #DCFF06;
-  --accent-tertiary: #59FFFB;
-  --accent-quaternary: #FC62FF;
-  --accent-link: #FFA511;
-  
-  --gradient-silver: linear-gradient(35deg, #00D7E0, #8D9A21);
-  --gradient-league: linear-gradient(20deg, #C2727F, #FF0084, #FFEA00);
-  --gradient-bronze: linear-gradient(35deg, #ECB701, #BFA401);
-  --gradient-gold: linear-gradient(35deg, #F6F601, #D5AD02);
-  
-  --system-negative: #E9033A;
-  --system-positive: #00C974;
-
-  --accent-primary-hover: #C7E605; /* Добавлена переменная для состояния hover */
-  --background-card: #FFFFFF;
-  --border-card: #DADDE1;
+    /* Цвета для состояний компонентов */
+    --primary-hover: #c7e500;
+    --primary-active: #b2cc00;
+    --secondary-hover: #333;
+    --secondary-active: #666;
+    --info-hover: #2980b9;
+    --info-active: #2471a3;
+    --success-hover: #27ae60;
+    --success-active: #1f8e4d;
+    --warning-hover: #d4ac0d;
+    --warning-active: #b7950b;
+    --danger-hover: #c0392b;
+    --danger-active: #a93226;
 }
 
-/* Цвета для темной темы */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-primary: #F6F6F6;
-    --text-secondary: #ECECEC;
-    --text-caption: #DADEE1;
+/* Темная тема */
+body.dark-theme {
+    --background-primary: var(--background-dark);
+    --text-primary: var(--text-dark);
+}
 
-    --background-primary: #24272D;
-    --background-secondary: #333840;
-    --background-tertiary: #444851;
-    --background-accent: #00C8C8;
-
-    --border-primary: #444851;
-    --border-secondary: #63676E;
-    --border-gradient: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.0) 41%, rgba(0, 0, 0, 0.1) 100%);
-    
-    --accent-primary: #DCFF06;
-    --accent-tertiary: #00C8C8;
-    --accent-quaternary: #FF85FF;
-    --accent-link: #FFA511;
-
-    --gradient-silver: linear-gradient(35deg, #00D7E0, #8D9A21);
-    --gradient-league: linear-gradient(20deg, #C2727F, #FF0084, #FFEA00);
-    --gradient-bronze: linear-gradient(35deg, #ECB701, #BFA401);
-    --gradient-gold: linear-gradient(35deg, #F6F601, #D5AD02);
-
-    --system-negative: #E9033A;
-    --system-positive: #00C974;
-
-    --accent-primary-hover: #C7E605;
-    --background-card: #24272D;
-    --border-card: #333840;
-  }
+body.light-theme {
+    --background-primary: var(--background-light);
+    --text-primary: var(--text-light);
 }
