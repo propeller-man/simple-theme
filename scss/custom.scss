@@ -1,1 +1,7 @@
+// Переопределение переменных перед импортом Bootstrap
+$primary: #DCFF06;
+$secondary: #000;
+
+// Импорт Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
 
