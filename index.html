@@ -5,9 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Design System</title>
   <link rel="stylesheet" href="css/colors.css">
-  <link rel="stylesheet" href="css/typography.css">
-  <link rel="stylesheet" href="css/spacing.css">
   <link rel="stylesheet" href="css/components.css">
+  <style>
+    body {
+      font-family: var(--font-family-body);
+      background-color: var(--background-primary);
+    }
+    .btn {
+      background-color: var(--accent-primary);
+      color: var(--text-primary);
+      padding: var(--space-2) var(--space-3);
+      border: none;
+      border-radius: var(--border-radius-1);
+      cursor: pointer;
+      font-size: var(--font-size-2);
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: var(--accent-quaternary);
+    }
+    .card {
+      background-color: var(--background-card);
+      border: 1px solid var(--border-card);
+      border-radius: var(--border-radius-2);
+      padding: var(--space-3);
+      box-shadow: var(--box-shadow-1);
+      transition: background-color 0.3s, border-color 0.3s;
+    }
+    .card.dark-mode {
+      background-color: var(--background-card);
+      border-color: var(--border-card);
+      color: var(--text-primary);
+    }
+  </style>
 </head>
 <body>
   <button class="btn">Click Me</button>
@@ -17,4 +47,3 @@
   </div>
 </body>
 </html>
-
