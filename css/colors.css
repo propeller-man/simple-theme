@@ -1,42 +1,10 @@
 :root {
-    /* Основные цвета */
-    --primary-color: #DCFF06;
-    --secondary-color: #000;
-    --background-light: #fff;
-    --background-dark: #000;
-    --text-light: #000;
-    --text-dark: #fff;
-
-    /* Дополнительные цвета */
-    --accent-color: #F39C12;
-    --muted-color: #95A5A6;
-    --info-color: #3498DB;
-    --success-color: #2ECC71;
-    --warning-color: #F1C40F;
-    --danger-color: #E74C3C;
-
-    /* Цвета для состояний компонентов */
-    --primary-hover: #c7e500;
-    --primary-active: #b2cc00;
-    --secondary-hover: #333;
-    --secondary-active: #666;
-    --info-hover: #2980b9;
-    --info-active: #2471a3;
-    --success-hover: #27ae60;
-    --success-active: #1f8e4d;
-    --warning-hover: #d4ac0d;
-    --warning-active: #b7950b;
-    --danger-hover: #c0392b;
-    --danger-active: #a93226;
-}
-
-/* Темная тема */
-body.dark-theme {
-    --background-primary: var(--background-dark);
-    --text-primary: var(--text-dark);
-}
-
-body.light-theme {
-    --background-primary: var(--background-light);
-    --text-primary: var(--text-light);
+    --bs-primary: #DCFF06;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
 }
