@@ -1,27 +1,36 @@
 /* custom-bootstrap.css */
 
-/* Пример кнопок с нашими цветовыми переменными */
+/* Переопределение цвета кнопок */
 .btn-primary {
-    background-color: var(--accent-primary);
-    border-color: var(--accent-primary);
-    color: var(--text-primary);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .btn-primary:hover {
-    background-color: var(--accent-primary-hover);
-    border-color: var(--accent-primary-hover);
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
 }
 
-/* Пример карточек с нашими цветовыми переменными */
+.btn-primary:active {
+    background-color: var(--primary-active);
+    border-color: var(--primary-active);
+}
+
+/* Кастомные стили для карточек */
 .card {
-    background-color: var(--background-card);
-    border: 1px solid var(--border-card);
+    border: 2px solid var(--primary-color);
 }
 
 .card-title {
-    color: var(--text-primary);
+    font-family: 'Golos Text', sans-serif;
+    color: var(--primary-color);
 }
 
-.card-text {
-    color: var(--text-secondary);
+/* Дополнительные стили для темной темы */
+body.dark-theme .card {
+    border-color: var(--text-dark);
+}
+
+body.dark-theme .card-title {
+    color: var(--text-dark);
 }
