@@ -1,93 +1,64 @@
 /* components.css */
 
-/* Стиль для кнопок */
+/* Основные стили для кнопок */
 .btn-primary {
   background-color: var(--accent-primary);
   color: var(--text-primary);
-  padding: var(--space-2) var(--space-3);
-  border: none;
-  border-radius: var(--border-radius-1);
-  cursor: pointer;
-  font-size: var(--font-size-2);
-  transition: background-color 0.3s, transform 0.2s;
+  border: 1px solid var(--border-primary);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .btn-primary:hover {
-  background-color: var(--accent-secondary);
-  color: var(--text-primary);
-}
-
-.btn-primary:active {
-  background-color: var(--accent-tertiary);
-  color: var(--text-primary);
-  transform: scale(0.98);
-}
-
-.btn-primary:disabled {
-  background-color: var(--gray-4);
+  background-color: var(--accent-primary-hover);
   color: var(--text-secondary);
-  cursor: not-allowed;
 }
 
-/* Стиль для карточек */
+.btn-primary:focus, .btn-primary:active {
+  background-color: var(--accent-primary-hover);
+  color: var(--text-secondary);
+  box-shadow: 0 0 0 0.2rem rgba(0, 255, 0, 0.5);
+}
+
+/* Основные стили для карточек */
 .card {
   background-color: var(--background-card);
   border: 1px solid var(--border-card);
-  border-radius: var(--border-radius-2);
-  padding: var(--space-3);
+  border-radius: var(--border-radius-1);
   box-shadow: var(--box-shadow-1);
-  transition: background-color 0.3s, border-color 0.3s;
 }
 
 .card .card-title {
-  font-family: var(--font-family-heading);
-  font-size: var(--font-size-4);
-  margin-bottom: var(--space-2);
   color: var(--text-primary);
+  font-family: var(--font-family-body);
 }
 
 .card .card-text {
+  color: var(--text-secondary);
   font-family: var(--font-family-body);
-  font-size: var(--font-size-2);
-  color: var(--text-secondary);
 }
 
-/* Стили для форм */
-.form-control {
-  width: 100%;
-  padding: var(--space-2);
-  border: 1px solid var(--border-card);
-  border-radius: var(--border-radius-1);
-  font-size: var(--font-size-2);
-  margin-bottom: var(--space-3);
+/* Пример использования градиентов */
+.bg-gradient-silver {
+  background: var(--gradient-silver);
 }
 
-.form-control:focus {
-  border-color: var(--accent-primary);
-  outline: none;
-  background-color: var(--background-card);
-  color: var(--text-primary);
+.bg-gradient-league {
+  background: var(--gradient-league);
 }
 
-/* Стили для таблиц */
-.table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: var(--space-4);
+.bg-gradient-bronze {
+  background: var(--gradient-bronze);
 }
 
-.table th,
-.table td {
-  padding: var(--space-2);
-  border: 1px solid var(--border-card);
+.bg-gradient-gold {
+  background: var(--gradient-gold);
 }
 
-.table th {
-  background-color: var(--background-secondary);
-  color: var(--text-primary);
+/* Пример использования системных цветов */
+.text-negative {
+  color: var(--system-negative);
 }
 
-.table td {
-  background-color: var(--background-card);
-  color: var(--text-secondary);
+.text-positive {
+  color: var(--system-positive);
 }
