@@ -4,22 +4,15 @@
 
 ## Структура
 
-design-system/
-│
-├── css/
-│   ├── bootstrap.min.css       # Загружен через CDN
-│   ├── colors.css              # Наши собственные определения цветов
-│   ├── typography.css          # Настройки типографики
-│   ├── spacing.css             # Настройки отступов
-│   ├── custom-bootstrap.css    # Переопределенные стили Bootstrap
-│
-├── js/
-│   ├── bootstrap.bundle.min.js # Загружен через CDN
-│   ├── theme-toggle.js         # Скрипт переключения тем
-│   ├── components.js           # Скрипты компонентов
-│
-├── index.html
-└── README.md
+- `css/bootstrap.min.css`: Загружен через CDN.
+- `css/colors.css`: Переменные цветов.
+- `css/typography.css`: Шрифты и типографика.
+- `css/spacing.css`: Переменные отступов.
+- `css/custom-bootstrap.css`: Стили для компонентов.
+- `index.html`: Пример использования стилей.
+- `js/bootstrap.bundle.min.js`: Загружен через CDN.
+- `js/theme-toggle.js`: Скрипт для переключения темы (если требуется).
+- `js/components.js`: Дополнительные скрипты для компонентов.
 
 ## Использование
 
@@ -33,7 +26,7 @@ design-system/
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/colors.css" rel="stylesheet">
     <link href="css/typography.css" rel="stylesheet">
     <link href="css/spacing.css" rel="stylesheet">
@@ -50,6 +43,8 @@ design-system/
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/theme-toggle.js"></script>
+    <script src="js/components.js"></script>
   </body>
 </html>
