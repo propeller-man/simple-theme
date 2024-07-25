@@ -1,5 +1,19 @@
 /* components.css */
 
+/* Custom styles for navbar */
+.navbar-light .navbar-brand {
+    color: var(--bs-primary);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--bs-dark);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--bs-primary-hover);
+}
+
+
 /* Основные стили для кнопок */
 .btn-primary {
   background-color: var(--accent-primary);
