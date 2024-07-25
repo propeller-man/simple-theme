@@ -1,36 +1,19 @@
-/* custom-bootstrap.css */
-
-/* Переопределение цвета кнопок */
-.btn-primary {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+/* Кастомные стили для кнопок */
+.btn-custom-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: #000;
 }
 
-.btn-primary:hover {
-    background-color: var(--primary-hover);
-    border-color: var(--primary-hover);
-}
-
-.btn-primary:active {
-    background-color: var(--primary-active);
-    border-color: var(--primary-active);
+.btn-custom-primary:hover {
+    background-color: var(--bs-primary-hover);
+    border-color: var(--bs-primary-hover);
+    color: #000;
 }
 
 /* Кастомные стили для карточек */
-.card {
-    border: 2px solid var(--primary-color);
-}
-
-.card-title {
-    font-family: 'Golos Text', sans-serif;
-    color: var(--primary-color);
-}
-
-/* Дополнительные стили для темной темы */
-body.dark-theme .card {
-    border-color: var(--text-dark);
-}
-
-body.dark-theme .card-title {
-    color: var(--text-dark);
+.card-custom {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: var(--bs-primary);
 }
