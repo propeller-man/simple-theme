@@ -11,3 +11,15 @@
     --bs-primary-hover: #c7e500;
     --bs-primary-active: #b2cc00;
 }
+
+/* Темная тема */
+.dark-theme {
+    --bs-primary: #c7e500;
+    --bs-secondary: #5a6268;
+    --bs-success: #155724;
+    --bs-info: #117a8b;
+    --bs-warning: #856404;
+    --bs-danger: #721c24;
+    --bs-light: #343a40;
+    --bs-dark: #f8f9fa;
+}
