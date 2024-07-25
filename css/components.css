@@ -1,7 +1,7 @@
 /* components.css */
 
 /* Стиль для кнопок */
-.btn {
+.btn-primary {
   background-color: var(--accent-primary);
   color: var(--text-primary);
   padding: var(--space-2) var(--space-3);
@@ -12,17 +12,20 @@
   transition: background-color 0.3s, transform 0.2s;
 }
 
-.btn:hover {
+.btn-primary:hover {
   background-color: var(--accent-secondary);
+  color: var(--text-primary);
 }
 
-.btn:active {
+.btn-primary:active {
   background-color: var(--accent-tertiary);
+  color: var(--text-primary);
   transform: scale(0.98);
 }
 
-.btn:disabled {
+.btn-primary:disabled {
   background-color: var(--gray-4);
+  color: var(--text-secondary);
   cursor: not-allowed;
 }
 
@@ -36,31 +39,21 @@
   transition: background-color 0.3s, border-color 0.3s;
 }
 
-.card.dark-mode {
-  background-color: var(--background-card);
-  border-color: var(--border-card);
-  color: var(--text-primary);
-}
-
-/* Текстовые стили */
-.card h2 {
+.card .card-title {
   font-family: var(--font-family-heading);
   font-size: var(--font-size-4);
   margin-bottom: var(--space-2);
   color: var(--text-primary);
 }
 
-.card p {
+.card .card-text {
   font-family: var(--font-family-body);
   font-size: var(--font-size-2);
   color: var(--text-secondary);
 }
 
 /* Стили для форм */
-input[type="text"],
-input[type="email"],
-input[type="password"],
-textarea {
+.form-control {
   width: 100%;
   padding: var(--space-2);
   border: 1px solid var(--border-card);
@@ -69,33 +62,32 @@ textarea {
   margin-bottom: var(--space-3);
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-textarea:focus {
+.form-control:focus {
   border-color: var(--accent-primary);
   outline: none;
+  background-color: var(--background-card);
+  color: var(--text-primary);
 }
 
 /* Стили для таблиц */
-table {
+.table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: var(--space-4);
 }
 
-table th,
-table td {
+.table th,
+.table td {
   padding: var(--space-2);
   border: 1px solid var(--border-card);
 }
 
-table th {
+.table th {
   background-color: var(--background-secondary);
   color: var(--text-primary);
 }
 
-table td {
+.table td {
   background-color: var(--background-card);
   color: var(--text-secondary);
 }
