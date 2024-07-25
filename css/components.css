@@ -1,4 +1,5 @@
 /* components.css */
+
 /* Стиль для кнопок */
 .btn {
   background-color: var(--accent-primary);
@@ -12,11 +13,11 @@
 }
 
 .btn:hover {
-  background-color: var(--accent-tertiary);
+  background-color: var(--accent-secondary);
 }
 
 .btn:active {
-  background-color: var(--accent-quaternary);
+  background-color: var(--accent-tertiary);
   transform: scale(0.98);
 }
 
@@ -25,18 +26,32 @@
   cursor: not-allowed;
 }
 
+/* Стиль для карточек */
 .card {
   background-color: var(--background-card);
   border: 1px solid var(--border-card);
-  border-radius: var(--space-2);
+  border-radius: var(--border-radius-2);
   padding: var(--space-3);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow-1);
   transition: background-color 0.3s, border-color 0.3s;
 }
 
 .card.dark-mode {
   background-color: var(--background-card);
   border-color: var(--border-card);
-  color: var(--text-light);
+  color: var(--text-primary);
 }
 
+/* Текстовые стили */
+.card h2 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-4);
+  margin-bottom: var(--space-2);
+  color: var(--text-primary);
+}
+
+.card p {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-2);
+  color: var(--text-secondary);
+}
