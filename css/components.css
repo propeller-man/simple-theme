@@ -12,11 +12,11 @@
 }
 
 .btn:hover {
-  background-color: var(--accent-quaternary);
+  background-color: var(--accent-tertiary);
 }
 
 .btn:active {
-  background-color: var(--accent-tertiary);
+  background-color: var(--accent-quaternary);
   transform: scale(0.98);
 }
 
