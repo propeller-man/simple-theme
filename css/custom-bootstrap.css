@@ -1,19 +1,11 @@
-/* Кастомные стили для кнопок */
-.btn-custom-primary {
+.btn-primary {
     background-color: var(--bs-primary);
     border-color: var(--bs-primary);
     color: #000;
 }
 
-.btn-custom-primary:hover {
+.btn-primary:hover {
     background-color: var(--bs-primary-hover);
     border-color: var(--bs-primary-hover);
     color: #000;
-}
-
-/* Кастомные стили для карточек */
-.card-custom {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-color: var(--bs-primary);
 }
