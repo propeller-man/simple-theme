@@ -1,0 +1,11 @@
+{
+  "name": "xrun-design-system",
+  "version": "1.0.0",
+  "scripts": {
+    "build-css": "sass scss/custom.scss css/custom-bootstrap.css"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.32.0"
+  }
+}
