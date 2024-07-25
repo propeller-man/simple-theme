@@ -7,4 +7,7 @@
     --bs-danger: #dc3545;
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
+
+    --bs-primary-hover: #c7e500;
+    --bs-primary-active: #b2cc00;
 }
